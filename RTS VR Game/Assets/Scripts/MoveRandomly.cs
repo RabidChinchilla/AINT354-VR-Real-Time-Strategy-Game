@@ -6,13 +6,17 @@ using UnityEngine.AI;
 public class MoveRandomly : MonoBehaviour
 {
     NavMeshAgent navMeshAgent;
+    NavMeshPath path;
     public float timerForNewPath;
     bool inCoRoutine = false;
+    Vector3 target;
+    bool validPath;
 
     // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        path = new NavMeshPath();
     }
 
     // Update is called once per frame
@@ -36,7 +40,8 @@ public class MoveRandomly : MonoBehaviour
 
     void GetNewPath()
     {
-        navMeshAgent.SetDestination(getNewRandomPosition());
+        target = getNewRandomPosition();
+        navMeshAgent.SetDestination(target);
     }
 
     IEnumerator doSomething()
@@ -44,6 +49,15 @@ public class MoveRandomly : MonoBehaviour
         inCoRoutine = true;
         yield return new WaitForSeconds(timerForNewPath);
         GetNewPath();
+        validPath = navMeshAgent.CalculatePath(target, path);
+        if (!validPath) Debug.Log("Found an invalid path");
+
+        while (!validPath)
+        {
+            yield return new WaitForSeconds(0.01f); //prevents crash
+            GetNewPath();
+            validPath = navMeshAgent.CalculatePath(target, path);
+        }
         inCoRoutine = false;
     }
 }
