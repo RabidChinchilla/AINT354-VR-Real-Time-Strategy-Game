@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class selectBox : MonoBehaviour
 {
-    [HideInInspector]
+    [SerializeField]
     private RectTransform selectSquareImage;
 
     Vector3 startPos;
@@ -43,7 +43,17 @@ public class selectBox : MonoBehaviour
 
             endPos = Input.mousePosition;
 
+            Vector3 squareStart = Camera.main.WorldToScreenPoint(startPos);
+            squareStart.z = 0f;
 
+            Vector3 centre = (squareStart + endPos) / 2f;
+
+            selectSquareImage.position = centre;
+
+            float sizeX = Mathf.Abs(squareStart.x - endPos.x);
+            float sizeY = Mathf.Abs(squareStart.y - endPos.y);
+
+            selectSquareImage.sizeDelta = new Vector2(sizeX, sizeY);
         }
     }
 }

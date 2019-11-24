@@ -9,9 +9,16 @@ public class click : MonoBehaviour
 
     private List<GameObject> selectedObjects;
 
-    void Start()
+    [HideInInspector]
+    public List<GameObject> selectableObjects;
+
+    private Vector3 mousePos1;
+    private Vector3 mousePos2;
+
+    void Awake()
     {
         selectedObjects = new List<GameObject>();
+        selectableObjects = new List<GameObject>();
     }
 
     // Update is called once per frame
@@ -20,21 +27,13 @@ public class click : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            //deselect everything after right click
-            if (selectedObjects.Count > 0)
-            {
-                foreach (GameObject obj in selectedObjects)
-                {
-                    obj.GetComponent<clickOn>().currentlySelected = false;
-                    obj.GetComponent<clickOn>().clickMe();
-                }
-
-                selectedObjects.Clear();
-            }
+            clearSelection();
         }
 
         if (Input.GetMouseButtonDown(0))
         {
+            mousePos1 = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+
             RaycastHit rayHit;
 
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out rayHit, Mathf.Infinity, clickablesLayer))
@@ -59,23 +58,77 @@ public class click : MonoBehaviour
                 }
                 else
                 {
-                    //select one object and deselect all others
-                    if(selectedObjects.Count > 0)
-                    {
-                        foreach(GameObject obj in selectedObjects)
-                        {
-                            obj.GetComponent<clickOn>().currentlySelected = false;
-                            obj.GetComponent<clickOn>().clickMe();
-                        }
-
-                        selectedObjects.Clear();
-                    }
+                    clearSelection();
 
                     selectedObjects.Add(rayHit.collider.gameObject);
                     clickOnScript.currentlySelected = true;
                     clickOnScript.clickMe();
                 }
             }
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                mousePos2 = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+
+                if (mousePos1 != mousePos2)
+                {
+                    selectObjects();
+                }
+            }
+        }
+    }
+
+    void selectObjects()
+    {
+        List<GameObject> removeObjects = new List<GameObject>();
+
+        if (Input.GetKey("left ctrl") == false)
+        {
+            clearSelection();
+        }
+
+        Rect selectRect = new Rect(mousePos1.x, mousePos1.y, mousePos2.x - mousePos1.x, mousePos2.y - mousePos1.y);
+
+        foreach (GameObject selectObj in selectableObjects)
+        {
+            if (selectObj != null)
+            {
+                if (selectRect.Contains(Camera.main.WorldToViewportPoint(selectObj.transform.position), true))
+                {
+                    selectedObjects.Add(selectObj);
+                    selectObj.GetComponent<clickOn>().currentlySelected = true;
+                    selectObj.GetComponent<clickOn>().clickMe();
+                }
+            }
+            else
+            {
+                removeObjects.Add(selectObj);
+            }
+        }
+
+        if (removeObjects.Count > 0)
+        {
+            foreach (GameObject remove in removeObjects)
+            {
+                selectableObjects.Remove(remove);
+            }
+
+            removeObjects.Clear();
+        }
+    }
+
+    void clearSelection()
+    {
+        //deselect everything after right click
+        if (selectedObjects.Count > 0)
+        {
+            foreach (GameObject obj in selectedObjects)
+            {
+                obj.GetComponent<clickOn>().currentlySelected = false;
+                obj.GetComponent<clickOn>().clickMe();
+            }
+
+            selectedObjects.Clear();
         }
     }
 }

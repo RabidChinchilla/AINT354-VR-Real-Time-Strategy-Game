@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class clickOn : MonoBehaviour
 {
+    //used for objects that can be selected
     [SerializeField]
     private Material purple;
     [SerializeField]
@@ -18,6 +19,7 @@ public class clickOn : MonoBehaviour
     void Start()
     {
         myRend = GetComponent<MeshRenderer>();
+        Camera.main.gameObject.GetComponent<click>().selectableObjects.Add(this.gameObject);
         clickMe();
     }
 
