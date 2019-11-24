@@ -23,7 +23,7 @@ public class CameraMovement : MonoBehaviour
 
     void Start()
     {
-        Screen.lockCursor = true;
+        //Screen.lockCursor = true; //uncomment if you want to hide the mouse on play
         rotationX = -transform.rotation.eulerAngles.x; //the - is for a temporary fix before it had the - when starting the game the camera would look immediately up
         rotationY = -transform.rotation.eulerAngles.y;
     }
