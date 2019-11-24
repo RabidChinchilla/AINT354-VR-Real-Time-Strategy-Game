@@ -10,6 +10,7 @@ public class CameraMovement : MonoBehaviour
     //E to go straight down
     //Shift move faster
     //Control move slower
+    //use the end key to be able to see the mouse again
 
     public float cameraSensitivity = 90;
     public float climbSpeed = 4;
@@ -17,12 +18,14 @@ public class CameraMovement : MonoBehaviour
     public float slowMoveFactor = 0.25f;
     public float fastMoveFactor = 3;
 
-    private float rotationX = 0.0f;
-    private float rotationY = 0.0f;
+    private float rotationX;
+    private float rotationY;
 
     void Start()
     {
-        
+        Screen.lockCursor = true;
+        rotationX = -transform.rotation.eulerAngles.x; //the - is for a temporary fix before it had the - when starting the game the camera would look immediately up
+        rotationY = -transform.rotation.eulerAngles.y;
     }
 
     void Update()
@@ -53,6 +56,11 @@ public class CameraMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Q)) { transform.position += transform.up * climbSpeed * Time.deltaTime; }
         if (Input.GetKey(KeyCode.E)) { transform.position -= transform.up * climbSpeed * Time.deltaTime; }
+
+        if (Input.GetKeyDown(KeyCode.End))
+        {
+            Screen.lockCursor = (Screen.lockCursor == false) ? true : false;
+        }
 
     }
 }

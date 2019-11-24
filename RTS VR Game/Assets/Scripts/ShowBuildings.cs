@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class ShowBuildings : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject MineButton;
 
-    // Update is called once per frame
-    void Update()
+    public void showButtons()
     {
-        
+        if(MineButton.active == false)
+        {
+            MineButton.SetActive(true);
+        }
+        else
+        {
+            MineButton.SetActive(false);
+        }
     }
 }
