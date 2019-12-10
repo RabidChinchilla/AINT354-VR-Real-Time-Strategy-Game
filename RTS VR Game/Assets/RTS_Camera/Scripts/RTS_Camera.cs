@@ -57,7 +57,7 @@ namespace RTS_Cam
 
         #region MapLimits
 
-        public bool limitMap = true;
+        public bool limitMap = false; //changed to false because map uses terrain
         public float limitX = 50f; //x limit of map
         public float limitY = 50f; //z limit of map
 
@@ -94,15 +94,15 @@ namespace RTS_Cam
         public KeyCode panningKey = KeyCode.Mouse2;
 
         public bool useKeyboardZooming = true;
-        public KeyCode zoomInKey = KeyCode.E;
-        public KeyCode zoomOutKey = KeyCode.Q;
+        public KeyCode zoomInKey = KeyCode.Z;
+        public KeyCode zoomOutKey = KeyCode.X;
 
         public bool useScrollwheelZooming = true;
         public string zoomingAxis = "Mouse ScrollWheel";
 
         public bool useKeyboardRotation = true;
-        public KeyCode rotateRightKey = KeyCode.X;
-        public KeyCode rotateLeftKey = KeyCode.Z;
+        public KeyCode rotateRightKey = KeyCode.E;
+        public KeyCode rotateLeftKey = KeyCode.Q;
 
         public bool useMouseRotation = true;
         public KeyCode mouseRotationKey = KeyCode.Mouse1;
