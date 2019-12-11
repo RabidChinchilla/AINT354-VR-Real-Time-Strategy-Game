@@ -4,17 +4,28 @@ using UnityEngine;
 
 public class ShowBuildings : MonoBehaviour
 {
-    public GameObject MineButton;
+
+    private bool visible = false;
+    [Tooltip("References to buttons of the build panel")]
+    public GameObject[] buttons;
+    [Tooltip("Build prefabs from Prefabs/BuildableUnits/")]
+    public GameObject[] prefabs;
 
     public void showButtons()
     {
-        if(MineButton.active == false)
+        if(visible == false)
         {
-            MineButton.SetActive(true);
+            //foreach (GameObject button in buttons)
+            //{
+            //    button.setActive(true);
+            //}
         }
         else
         {
-            MineButton.SetActive(false);
+            //foreach (GameObject button in buttons)
+            //{
+            //    button.setActive(false);
+            //}
         }
     }
 }
