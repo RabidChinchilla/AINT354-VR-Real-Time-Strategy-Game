@@ -15,7 +15,7 @@ public class LookAt : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Enemy")
+        if(other.tag == "NonplayerUnit")
         {
             target = other.transform;
         }
@@ -23,7 +23,7 @@ public class LookAt : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Enemy")
+        if (other.tag == "NonplayerUnit")
         {
             target = null;
         }

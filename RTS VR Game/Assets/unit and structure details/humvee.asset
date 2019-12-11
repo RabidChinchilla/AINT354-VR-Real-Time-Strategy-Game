@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 240fe560a03d2e64d88acd6267165587, type: 3}
-  m_Name: Scout
+  m_Name: humvee
   m_EditorClassIdentifier: 
-  maxHealth: 420
-  cost: 600
-  speed: 12
+  maxHealth: 600
+  cost: 500
+  speed: 20
   rotationSpeed: 80
   canMine: 0
   miningInterval: 0
   canShoot: 1
-  firingRange: 80
-  reloadTime: 3
+  firingRange: 50
+  reloadTime: 0
