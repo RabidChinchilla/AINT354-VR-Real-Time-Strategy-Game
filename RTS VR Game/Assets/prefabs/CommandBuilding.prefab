@@ -3677,6 +3677,7 @@ GameObject:
   - component: {fileID: 1859205146480685758}
   - component: {fileID: 6680964652449123320}
   - component: {fileID: 5801865145965964244}
+  - component: {fileID: 2842775380651128348}
   m_Layer: 0
   m_Name: CommandBuilding
   m_TagString: Untagged
@@ -3890,6 +3891,21 @@ MonoBehaviour:
   UnitProperties: {fileID: 0}
   turret: {fileID: 0}
   projectileInstantiationOffset: 0
+--- !u!114 &2842775380651128348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3429034690589868205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a9010f6128d8c4bb671127eb18b9d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2000
+  resources: 200
+  resourceCounter: {fileID: 0}
 --- !u!1 &3559749539069083847
 GameObject:
   m_ObjectHideFlags: 0
