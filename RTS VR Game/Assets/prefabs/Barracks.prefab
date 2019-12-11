@@ -3052,6 +3052,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9129503131963302536}
   - component: {fileID: 4307752918598681653}
+  - component: {fileID: 271740685396167155}
+  - component: {fileID: 8146452454373682378}
   m_Layer: 0
   m_Name: Barracks
   m_TagString: Untagged
@@ -3167,6 +3169,36 @@ MonoBehaviour:
   multithreading: 0
   cellBased: 0
   snapToPixelCenter: 0
+--- !u!65 &271740685396167155
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253971656873595035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.573853, y: 29.363838, z: 32.107292}
+  m_Center: {x: 0.5270386, y: 14.181919, z: 0.103946686}
+--- !u!114 &8146452454373682378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253971656873595035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91eec0c2d439dff46a562951cff5b953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  availableActions: 
+  UnitProperties: {fileID: 11400000, guid: 7970eaad0323d1441812d259a631aa50, type: 2}
+  turret: {fileID: 0}
+  projectileInstantiationOffset: 0
 --- !u!1 &5398496066718402186
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,9 +15,11 @@ MonoBehaviour:
   maxHealth: 10000
   cost: 1000
   isUsingEnergy: 0
+  damage: 0
+  energy: 0
+  canMine: 0
+  miningInterval: 0
+  canShoot: 0
+  reloadTime: 0
   rotationSpeed: 0
   firingRange: 0
-  damage: 0
-  energy: 600
-  miningInterval: 0
-  reloadTime: 0
