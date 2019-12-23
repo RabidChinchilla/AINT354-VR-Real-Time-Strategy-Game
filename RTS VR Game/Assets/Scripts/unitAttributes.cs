@@ -25,11 +25,11 @@ public class unitAttributes : MonoBehaviour
         state = "normal";
         hp = 0;
         damage = 0;
-        mvmntSpd = 0;
-        atkSpd = 0;
+        mvmntSpd = 0.0f;
+        atkSpd = 0.0f;
     }
 
-   void SetStats(int unitHealth, int unitDamage, int move, int attack)
+   void SetStats(int unitHealth, int unitDamage, float move, float attack)
     {
         //When the unit is created its Stats get placed into here
         hp = unitHealth;
@@ -68,13 +68,15 @@ public class unitAttributes : MonoBehaviour
     void Cautious ()
     {
         //When a unit is surrounded by lots of cover and they are by themselves then their movement speed is lowered
-        mvmntSpd /= 1.5;
+        mvmntSpd /= 1.5f;
     }
 
     void Hyped ()
 
     {
-        mvmntSpd *= 1.5;
+        mvmntSpd *= 1.5f;
     }
+
+    
 
 }
