@@ -50,10 +50,20 @@ public class unitAttributes : MonoBehaviour
     {
         // When the unit takes damage its hp is altered here
         hp -= damageTaken;
+
+        if(hp<=0)
+        {
+            Die();
+
+            //gameObject will be replaced with the nearest enemy
+            //This give the unit a boost, like their morale was increased due to a victory
+            gameObject.SendMessage("Hyped");
+        }
     }
 
     void Normal()
     {
+        //Resets the units stats to base
         damage = nDmg;
         mvmntSpd = nMv;
         atkSpd = nAtk;
@@ -77,6 +87,24 @@ public class unitAttributes : MonoBehaviour
         mvmntSpd *= 1.5f;
     }
 
+    void DealDamage()
+    {
+        //gameObject is a place holder, it will be replaced by the nearest enemy object
+        gameObject.SendMessage("TakeDamage",damage);
+    }
+
+    void Die ()
+    {
+        Destroy(gameObject);
+    }
+
+    void Upgrade(int healthUpgrade, int damageUpgrade)
+    {
+        //Call on function when upgrading a unit
+        hp += healthUpgrade;
+        damage += damageUpgrade;
+        nDmg += damageUpgrade;
+    }
     
 
 }

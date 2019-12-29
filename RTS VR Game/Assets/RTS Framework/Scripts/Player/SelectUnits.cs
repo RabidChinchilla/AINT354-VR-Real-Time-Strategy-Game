@@ -9,7 +9,8 @@ public class SelectUnits : MonoBehaviour {
     public GameObject MoveProjectorPrefab;
 
     // Currently selected objects
-    private List<GameObject> _selectedUnits;
+    public List<GameObject> _selectedUnits;
+    //protected List<GameObject> _selectedUnits;
     // Friendly (selectable) vehicles
     private GameObject[] _selectableUnits;
     // Selected (enemy) target
