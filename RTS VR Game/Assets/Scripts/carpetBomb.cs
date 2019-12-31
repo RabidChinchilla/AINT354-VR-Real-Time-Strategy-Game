@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class carpetBomb : Singleton<BuildUnits>
+public class carpetBomb : MonoBehaviour
 {
     public Camera camera;
 
