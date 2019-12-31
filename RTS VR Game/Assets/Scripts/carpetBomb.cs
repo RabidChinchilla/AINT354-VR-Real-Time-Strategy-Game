@@ -1,101 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
-public class carpetBomb : MonoBehaviour
+public class carpetBomb : Singleton<BuildUnits>
 {
-    [Tooltip("The layer on which units are built (TerrainLayer)")]
-    public LayerMask buildingLayer;
-    [Tooltip("The Transform which parents all player units")]
-    public GameObject unitHolder;
-
-    [HideInInspector]
-    public List<GameObject> PlayerUnits;
-
-    private bool _isPlacingBuilding = false;
-    private GameObject _indicator;
+    public Camera camera;
 
     void Start()
     {
-        // Add all initially existing units
-        PlayerUnits.AddRange(GameObject.FindGameObjectsWithTag(Constants.PLAYER_UNIT));
+        RaycastHit hit;
+        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
 
-        GameObject[] buildButtons = BuildPanel.Instance.buttons;
-
-        buildButtons[0].GetComponent<Button>().onClick.AddListener(() => StartPlacing(BuildPanel.Instance.prefabs[0]));
-        buildButtons[1].GetComponent<Button>().onClick.AddListener(() => StartPlacing(BuildPanel.Instance.prefabs[1]));
-        buildButtons[2].GetComponent<Button>().onClick.AddListener(() => StartPlacing(BuildPanel.Instance.prefabs[2]));
-        buildButtons[3].GetComponent<Button>().onClick.AddListener(() => StartPlacing(BuildPanel.Instance.prefabs[3]));
-        buildButtons[4].GetComponent<Button>().onClick.AddListener(() => StartPlacing(BuildPanel.Instance.prefabs[4]));
-    }
-
-    void Update()
-    {
-        if (_isPlacingBuilding)
+        if (Physics.Raycast(ray, out hit))
         {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            // Display building indicator (with green or red material)
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, 1 << LayerMask.NameToLayer("GroundLayer")))
-            {
-                _indicator.transform.position = hit.point;
-            }
+            Transform objectHit = hit.transform;
 
-            if (!EventSystem.current.IsPointerOverGameObject()) // Suitable build location
-            {
-                if (Input.GetMouseButtonDown(0))    // LMB to confirm build
-                {
-                    EndPlacing(true);
-                }
-
-                if (Input.GetMouseButtonDown(1))    // RMB to cancel build
-                {
-                    EndPlacing();
-                }
-            }
-
+            // Do something with the object that was hit by the raycast.
         }
     }
 
-    /// <summary>
-    /// Returns whether the player is currently placing a building
-    /// </summary>
-    public bool IsConstructing()
+        void Update()
     {
-        return _isPlacingBuilding;
-    }
 
-    /// <summary>
-    /// Invoked by UI build buttons
-    /// </summary>
-    /// <param name="buildingToBuild">Building prefab which was clicked</param>
-    public void StartPlacing(GameObject buildingToBuild)
-    {
-        if (_isPlacingBuilding)
+        // Bit shift the index of the layer (8) to get a bit mask
+        int layerMask = 1 << 8;
+
+        // This would cast rays only against colliders in layer 8.
+        // But instead we want to collide against everything except layer 8. The ~ operator does this, it inverts a bitmask.
+        layerMask = ~layerMask;
+
+        RaycastHit hit;
+        // Does the ray intersect any objects excluding the player layer
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
         {
-            EndPlacing();
-        }
-
-        _isPlacingBuilding = true;
-        _indicator = Instantiate(buildingToBuild, unitHolder.transform, false);
-    }
-
-    /// <summary>
-    /// Called when buiding placing is aborted or a building is placed
-    /// </summary>
-    /// <param name="placeBuilding">Building placed or placement aborted</param>
-    public void EndPlacing(bool placeBuilding = false)
-    {
-        if (!placeBuilding)
-        {
-            _isPlacingBuilding = false;
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            Debug.Log("Did Hit");
         }
         else
         {
-            _isPlacingBuilding = !_indicator.GetComponentInChildren<UnitPlacement>().PlaceUnit();
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+            Debug.Log("Did not Hit");
         }
-        Destroy(_indicator);
-        _isPlacingBuilding = false;
-
     }
+
+
 }
