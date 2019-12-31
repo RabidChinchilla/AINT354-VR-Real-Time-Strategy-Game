@@ -1430,6 +1430,16 @@ PrefabInstance:
       propertyPath: resourceCounter
       value: 
       objectReference: {fileID: 705972123}
+    - target: {fileID: 2842775380651128348, guid: e8eb2c0210998454ebeb81fad9d6cbe3,
+        type: 3}
+      propertyPath: resources
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5801865145965964244, guid: e8eb2c0210998454ebeb81fad9d6cbe3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8eb2c0210998454ebeb81fad9d6cbe3, type: 3}
 --- !u!1 &178330095 stripped
@@ -7418,6 +7428,7 @@ GameObject:
   - component: {fileID: 1742854296}
   - component: {fileID: 1742854295}
   - component: {fileID: 1742854297}
+  - component: {fileID: 1742854298}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -7472,6 +7483,19 @@ MonoBehaviour:
   ActionsPanel: {fileID: 0}
   MoveProjectorPrefab: {fileID: 0}
   _selectedUnits: []
+--- !u!114 &1742854298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742854294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b73d8db2a1adb4a82ec59fc28a9cd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1728411201}
 --- !u!1 &1762071410
 GameObject:
   m_ObjectHideFlags: 0
