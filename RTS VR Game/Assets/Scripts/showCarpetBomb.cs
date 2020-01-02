@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class carpetBomb : MonoBehaviour
+public class showCarpetBomb : MonoBehaviour
 {
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +15,6 @@ public class carpetBomb : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(1))
-        {
-            transform.Rotate(Vector3.up * Time.deltaTime * 20);
-        }
+        
     }
 }
