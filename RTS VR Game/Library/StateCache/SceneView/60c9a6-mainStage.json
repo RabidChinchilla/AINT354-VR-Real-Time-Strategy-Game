@@ -1,9 +1,1 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":851.2233276367188,"y":-0.11999999731779099,"z":136.97882080078126},"rotation":{"x":-0.41097334027290347,"y":-0.07005881518125534,"z":0.03191900625824928,"w":-0.9085745811462402},"size":22.0,"orthographic":false}
-=======
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":898.3125610351563,"y":-93.77801513671875,"z":172.9945526123047},"rotation":{"x":-0.4395841956138611,"y":-0.13560247421264649,"z":0.06753718107938767,"w":-0.8855209946632385},"size":397.1862487792969,"orthographic":false}
->>>>>>> parent of 37da008... Unit Targeting added
-=======
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":898.3125610351563,"y":-93.77801513671875,"z":172.9945526123047},"rotation":{"x":-0.4395841956138611,"y":-0.13560247421264649,"z":0.06753718107938767,"w":-0.8855209946632385},"size":397.1862487792969,"orthographic":false}
->>>>>>> parent of 37da008... Unit Targeting added
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":851.2233276367188,"y":-0.11999999731779099,"z":136.97882080078126},"rotation":{"x":-0.41097334027290347,"y":-0.07005881518125534,"z":0.03191900625824928,"w":-0.9085745811462402},"size":106.23844909667969,"orthographic":false}
