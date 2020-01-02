@@ -18,8 +18,6 @@ public class unitAttributes : MonoBehaviour
     private int nDmg;
     private int nHP;
 
-    private GameObject[] targets; 
-
 
     // Start is called before the first frame update
     void Start()
@@ -31,10 +29,6 @@ public class unitAttributes : MonoBehaviour
         atkSpd = 0.0f;
     }
 
-    void Update()
-    {
-
-    }
    void SetStats(int unitHealth, int unitDamage, float move, float attack)
     {
         //When the unit is created its Stats get placed into here
@@ -93,10 +87,10 @@ public class unitAttributes : MonoBehaviour
         mvmntSpd *= 1.5f;
     }
 
-    void DealDamage(GameObject mainTarget)
+    void DealDamage()
     {
         //gameObject is a place holder, it will be replaced by the nearest enemy object
-        mainTarget.SendMessage("TakeDamage",damage);
+        gameObject.SendMessage("TakeDamage",damage);
     }
 
     void Die ()
@@ -111,26 +105,6 @@ public class unitAttributes : MonoBehaviour
         damage += damageUpgrade;
         nDmg += damageUpgrade;
     }
-
-    GameObject FindNearestTarget()
-    {
-        GameObject mainTarget = null;
-        targets = GameObject.FindGameObjectsWithTag("Red");
-        float distance = 100.0f;
-        Vector3 unitPosition = transform.position;
-        foreach (GameObject enemy in targets)
-        {
-            Vector3 dis = enemy.transform.position - unitPosition;
-            float accurateDistance = dis.sqrMagnitude;
-            if (accurateDistance< distance)
-            {
-                mainTarget = enemy;
-                distance = accurateDistance;
-            }
-
-        }
-        
-        return mainTarget;
-    }
+    
 
 }
