@@ -114,7 +114,11 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 494}
   m_MaxSize: {x: 14002, y: 14044}
   vertical: 0
+<<<<<<< HEAD
   controlID: 67
+=======
+  controlID: 30
+>>>>>>> parent of 26fd833... Metal Texture
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -382,10 +386,17 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 4c370000
       m_LastClickedID: 0
       m_ExpandedIDs: dee9ffff4efbffff
+=======
+      scrollPos: {x: 0, y: 1846}
+      m_SelectedIDs: f2310000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 34c3feff68fbffff06490000
+>>>>>>> parent of 26fd833... Metal Texture
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -445,9 +456,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 851.2233, y: -0.12, z: 136.97882}
     speed: 2
     m_Value: {x: 851.2233, y: -0.12003129, z: 136.97885}
+=======
+    m_Target: {x: 851.41833, y: 15.679609, z: 178.8455}
+    speed: 2
+    m_Value: {x: 851.41833, y: 15.679609, z: 178.8455}
+>>>>>>> parent of 26fd833... Metal Texture
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -476,6 +493,7 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.41097334, y: -0.070058815, z: 0.031919006, w: -0.9085746}
     speed: 2
     m_Value: {x: -0.41095218, y: -0.06868441, z: 0.03129729, w: -0.908527}
@@ -483,6 +501,15 @@ MonoBehaviour:
     m_Target: 106.23845
     speed: 2
     m_Value: 111.24445
+=======
+    m_Target: {x: -0.14436246, y: 0.56637186, z: -0.101382606, w: -0.8052538}
+    speed: 2
+    m_Value: {x: -0.14388107, y: 0.5698958, z: -0.10201439, w: -0.8025647}
+  m_Size:
+    m_Target: 183.95383
+    speed: 2
+    m_Value: 176.03236
+>>>>>>> parent of 26fd833... Metal Texture
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -573,21 +600,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Scenes
+=======
+    - Assets/Scripts
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scripts
+>>>>>>> parent of 26fd833... Metal Texture
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Kenji\Documents\GitHub\AINT354-VR-Real-Time-Strategy-Game\RTS
     VR Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 435}
     m_SelectedIDs: be320000
     m_LastClickedID: 12990
     m_ExpandedIDs: 0000000062320000ba3200001a330000a8340000f042000016430000ca43000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 446}
+    m_SelectedIDs: e8330000
+    m_LastClickedID: 13288
+    m_ExpandedIDs: 00000000c63200001a3300007833000002350000c23c00001e43000044430000f643000000ca9a3b
+>>>>>>> parent of 26fd833... Metal Texture
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -615,7 +657,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000062320000ba3200001a330000a8340000f042000016430000ca430000
+=======
+    m_ExpandedIDs: 00000000c63200001a33000078330000023500001e43000044430000f6430000
+>>>>>>> parent of 26fd833... Metal Texture
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
