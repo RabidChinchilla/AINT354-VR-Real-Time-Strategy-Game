@@ -12,12 +12,12 @@ public class commandPost : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        resourceCounter.text = "Resources: " + resources;
+        //resourceCounter.text = "Resources: " + resources;
     }
 
     // Update is called once per frame
     void Update()
     {
-        resourceCounter.text = "Resources: " + resources;
+        //resourceCounter.text = "Resources: " + resources;
     }
 }

@@ -98,12 +98,15 @@ public class unitAttributes : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void Upgrade(int healthUpgrade, int damageUpgrade)
+    void UpgradeHealth(int healthUpgrade)
     {
         //Call on function when upgrading a unit
         hp += healthUpgrade;
+    }
+
+    void UpgradeDamage (int damageUpgrade)
+    {
         damage += damageUpgrade;
-        nDmg += damageUpgrade;
     }
     
 
