@@ -26,6 +26,7 @@ public class carpetBomb : MonoBehaviour
         {
             Instantiate(carpetBombSet, spawnPoint.transform.position, spawnPoint.transform.rotation);
             Debug.Log("Drop Bombs");
+            Destroy(gameObject);
         }
     }
 }
