@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spawnLargeBomb : MonoBehaviour
+public class spawnUAV : MonoBehaviour
 {
-    public GameObject LargeBombPrefab;
+    public GameObject UAVPrefab;
     public GameObject otherButton1;
     public GameObject otherButton2;
     public GameObject thisButton;
 
-    public void instantiateLargeBomb()
+    public void instantiateUAV()
     {
-        Instantiate(LargeBombPrefab);
+        Instantiate(UAVPrefab);
         otherButton1.SetActive(false);
         otherButton2.SetActive(false);
         thisButton.SetActive(false);

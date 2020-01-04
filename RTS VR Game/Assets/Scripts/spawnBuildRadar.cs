@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spawnLargeBomb : MonoBehaviour
+public class spawnBuildRadar : MonoBehaviour
 {
-    public GameObject LargeBombPrefab;
+    public GameObject RadarPrefab;
     public GameObject otherButton1;
     public GameObject otherButton2;
     public GameObject thisButton;
 
-    public void instantiateLargeBomb()
+    public void instantiateRadar()
     {
-        Instantiate(LargeBombPrefab);
+        Instantiate(RadarPrefab);
         otherButton1.SetActive(false);
         otherButton2.SetActive(false);
         thisButton.SetActive(false);
