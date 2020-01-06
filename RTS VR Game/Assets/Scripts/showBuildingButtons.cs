@@ -20,7 +20,6 @@ public class showBuildingButtons : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
 
-            // If player clicked on a selectable unit
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
             {
                 Debug.Log("Unit clicked: " + hit.transform.gameObject.name);
