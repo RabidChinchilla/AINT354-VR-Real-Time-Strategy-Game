@@ -3285,9 +3285,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1501807428405636880}
-  - component: {fileID: 5885581465379592084}
   - component: {fileID: 8446539648003121208}
-  - component: {fileID: 8072445478527307275}
+  - component: {fileID: 6801567975157578141}
   m_Layer: 0
   m_Name: Factory 2
   m_TagString: Untagged
@@ -3303,7 +3302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2489404546439175427}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 899.9, y: 0.05, z: 175.8}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.46375, y: 0.46375, z: 0.46375}
   m_Children:
   - {fileID: 6823343059546448257}
@@ -3465,37 +3464,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5885581465379592084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2489404546439175427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b130f358dcb26548b2ff0923d496dc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  team: 0
-  brightness: 1
-  shapeType: 0
-  absoluteOffset: 0
-  offset: {x: 0, y: 0}
-  boxSize: {x: 5, y: 5}
-  circleRadius: 50
-  innerRadius: 1
-  angle: 180
-  texture: {fileID: 2800000, guid: aedb60bb6d3f6d14982de16ca694873e, type: 3}
-  rotateToForward: 1
-  lineOfSightMask:
-    serializedVersion: 2
-    m_Bits: 1
-  lineOfSightRaycastCount: 100
-  lineOfSightPenetration: 1
-  multithreading: 0
-  cellBased: 0
-  snapToPixelCenter: 0
 --- !u!65 &8446539648003121208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3509,7 +3477,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 47.164932, y: 39.677975, z: 52.707413}
   m_Center: {x: -2.1696968, y: 19.338993, z: 11.083871}
---- !u!114 &8072445478527307275
+--- !u!114 &6801567975157578141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3518,14 +3486,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2489404546439175427}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91eec0c2d439dff46a562951cff5b953, type: 3}
+  m_Script: {fileID: 11500000, guid: a685a934cce6da044982c22a13e8eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSelected: 0
-  availableActions: 
-  UnitProperties: {fileID: 11400000, guid: 7970eaad0323d1441812d259a631aa50, type: 2}
-  turret: {fileID: 0}
-  projectileInstantiationOffset: 0
+  commandHub: {fileID: 0}
 --- !u!1 &2489811806319030210
 GameObject:
   m_ObjectHideFlags: 0

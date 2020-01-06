@@ -9,6 +9,9 @@ TagManager:
   - NonplayerUnit
   - Spawn
   - mine
+  - CommandBuilding
+  - Barracks
+  - InfoBuilding
   layers:
   - Default
   - TransparentFX
