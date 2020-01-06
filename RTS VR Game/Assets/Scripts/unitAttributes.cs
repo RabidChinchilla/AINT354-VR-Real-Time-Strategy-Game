@@ -11,6 +11,11 @@ public class unitAttributes : MonoBehaviour
     protected float mvmntSpd { get; set; }
     protected float atkSpd { get; set; }
 
+    protected int unitCost;
+    protected int unitBuildTime;
+
+    protected float calmDown = 20.0f;
+
     //These next values are used when the units state is reset to normal
     //*Note* These values do not change once they are set
     private float nAtk;
@@ -18,6 +23,10 @@ public class unitAttributes : MonoBehaviour
     private int nDmg;
     private int nHP;
 
+    GameObject[] targets = GameObject.FindGameObjectsWithTag("Red");
+    GameObject mainTarget = null;
+    float maxDistance = 500.0f;
+    Vector3 position;
 
     // Start is called before the first frame update
     void Start()
@@ -27,9 +36,31 @@ public class unitAttributes : MonoBehaviour
         damage = 0;
         mvmntSpd = 0.0f;
         atkSpd = 0.0f;
+        unitCost = 0;
+        unitBuildTime = 0;
+        //Move to update script as well
+        Vector3 position = gameObject.transform.position;
+
+    }    
+    
+    void Update ()
+    {
+        Vector3 position = gameObject.transform.position;
+        FindNearestEnemy();
+
+        if (mainTarget != null)
+        {
+            Invoke("DealDamage", atkSpd);
+        }
+
+        if (state != "Normal")
+        {
+            Invoke("Normal", calmDown);
+        }
     }
 
-   void SetStats(int unitHealth, int unitDamage, float move, float attack)
+
+   void SetStats(int unitHealth, int unitDamage, float move, float attack, int cost, int buildTime)
     {
         //When the unit is created its Stats get placed into here
         hp = unitHealth;
@@ -44,6 +75,27 @@ public class unitAttributes : MonoBehaviour
         atkSpd = attack;
         nAtk = attack;
 
+        unitCost = cost;
+        unitBuildTime = buildTime;
+
+    }
+
+
+    void FindNearestEnemy()
+    {
+
+
+        foreach (GameObject enemy in targets)
+        {
+            Vector3 distance = enemy.transform.position- position;
+            float accurateDistance = distance.sqrMagnitude;
+            if (accurateDistance < maxDistance)
+            {
+                mainTarget = enemy;
+                maxDistance = accurateDistance;
+            }
+        }
+        
     }
 
     void TakeDamage(int damageTaken)
@@ -54,16 +106,21 @@ public class unitAttributes : MonoBehaviour
         if(hp<=0)
         {
             Die();
-
-            //gameObject will be replaced with the nearest enemy
             //This give the unit a boost, like their morale was increased due to a victory
-            gameObject.SendMessage("Hyped");
+            //gameObject.SendMessage("Hyped");
         }
+    }
+
+    void ResetTargetting()
+    {
+        mainTarget = null;
+        maxDistance = 500.0f;
     }
 
     void Normal()
     {
         //Resets the units stats to base
+        state = "Normal";
         damage = nDmg;
         mvmntSpd = nMv;
         atkSpd = nAtk;
@@ -72,6 +129,11 @@ public class unitAttributes : MonoBehaviour
     void Retreat ()
     {
         //When a units HP is below a certain amount then this fuction is called which makes the unit move the opposite direction of the enemy
+        if (hp < 50)
+        {
+            Vector3 dis = transform.position - mainTarget.transform.position;
+            transform.Translate(dis * mvmntSpd * Time.deltaTime);
+        }
 
     }
 
@@ -84,13 +146,14 @@ public class unitAttributes : MonoBehaviour
     void Hyped ()
 
     {
+        state = "Hyped";
         mvmntSpd *= 1.5f;
     }
 
     void DealDamage()
     {
         //gameObject is a place holder, it will be replaced by the nearest enemy object
-        gameObject.SendMessage("TakeDamage",damage);
+        mainTarget.SendMessage("TakeDamage",damage);
     }
 
     void Die ()
