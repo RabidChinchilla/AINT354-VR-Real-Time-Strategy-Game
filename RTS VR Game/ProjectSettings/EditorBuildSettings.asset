@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Destroyed City Level.unity
+    guid: 06f20f9637f217442a9afb7647f25c77
   m_configObjects: {}
