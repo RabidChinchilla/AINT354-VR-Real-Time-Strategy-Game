@@ -27,8 +27,8 @@ public class buildOrder : MonoBehaviour
     {
         Instantiate(buildList[1], spawnPoint.transform.position,spawnPoint.transform.rotation);
     }
-    //void Completed()
-    //{
-    //    buildList.
-    //}
+    void Completed()
+    {
+        buildList.
+    }
 }
