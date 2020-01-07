@@ -177,7 +177,7 @@ public class SelectUnits : MonoBehaviour {
                     ActionsPanel.SetMenuItems(_selectedUnits);
                 }
                 else
-                {                  
+                {
                     go.GetComponent<UnitController>().SetSelected(false);
                     _selectedUnits.Remove(go);
                     ActionsPanel.SetMenuItems(_selectedUnits);

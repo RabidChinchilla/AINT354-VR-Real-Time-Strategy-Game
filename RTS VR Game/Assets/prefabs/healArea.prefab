@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5130487497438879552}
   - component: {fileID: 3797825083728758680}
   - component: {fileID: 5233908352898536501}
+  - component: {fileID: -2119453149679612270}
   m_Layer: 0
   m_Name: healArea
   m_TagString: Untagged
@@ -120,3 +121,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 6451305809765563, guid: 4337f96433be18e46af9b24a3a1630ac, type: 3}
+--- !u!114 &-2119453149679612270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5130487497438879557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 10
+  edgeSharpness: 0

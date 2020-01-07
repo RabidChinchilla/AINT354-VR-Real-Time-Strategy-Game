@@ -22,7 +22,7 @@ public class marketPlace : MonoBehaviour
         
     }
 
-    int GetCost(string unit)
+    public int GetCost(string unit)
     {
         if (unit == "Humvee")
         {

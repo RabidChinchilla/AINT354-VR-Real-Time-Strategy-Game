@@ -106,7 +106,7 @@ public abstract class UnitController : MonoBehaviour {
     public void SetSelected(bool selected)
     {
         isSelected = selected;
-        //Debug.Log(this.gameObject.name + " is now " + (isSelected ? "selected" : "deselected"));
+        Debug.Log(this.gameObject.name + " is now " + (isSelected ? "selected" : "deselected"));
         GetComponentInChildren<Projector>().enabled = isSelected;
     }
 

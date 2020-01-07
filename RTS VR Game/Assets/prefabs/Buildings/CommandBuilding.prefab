@@ -3680,7 +3680,7 @@ GameObject:
   - component: {fileID: 6122231969442411485}
   m_Layer: 0
   m_Name: CommandBuilding
-  m_TagString: Untagged
+  m_TagString: CommandBuilding
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

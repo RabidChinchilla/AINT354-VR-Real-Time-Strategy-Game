@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8269765796086736795}
   - component: {fileID: 8269765796086736792}
   - component: {fileID: 893462842946230244}
+  - component: {fileID: 8416297930506649878}
   m_Layer: 0
   m_Name: IncreaseDamageEffect
   m_TagString: Untagged
@@ -106,3 +107,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5acdaf89a5ca69b46aa12f8ba0c06bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8416297930506649878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8269765796086736793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 10
+  edgeSharpness: 0

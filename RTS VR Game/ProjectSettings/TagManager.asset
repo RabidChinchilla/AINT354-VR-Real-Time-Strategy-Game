@@ -10,6 +10,11 @@ TagManager:
   - Spawn
   - mine
   - FxTemporaire
+  - CommandBuilding
+  - Barracks
+  - InfoBuilding
+  - Factory
+  - PlayerController
   layers:
   - Default
   - TransparentFX

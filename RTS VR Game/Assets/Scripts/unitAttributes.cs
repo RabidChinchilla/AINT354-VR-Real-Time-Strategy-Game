@@ -34,7 +34,7 @@ public class unitAttributes : MonoBehaviour
     unitVoiceLines voice;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         GameObject[] targets = GameObject.FindGameObjectsWithTag("NonplayerUnit");
         state = "Normal";
@@ -48,6 +48,8 @@ public class unitAttributes : MonoBehaviour
         //Move to update script as well
         Vector3 position = gameObject.transform.position;
         voice = gameObject.GetComponent<unitVoiceLines>();
+        //gameObject.tag = "Barracks";
+        StartCoroutine(Tagging());
     }
 
    void SetStats(int unitHealth, int unitDamage, float move, float attack)
@@ -164,4 +166,10 @@ public class unitAttributes : MonoBehaviour
     }
 
 
+    IEnumerator Tagging()
+    {
+        yield return new WaitForSecondsRealtime(2);
+        //Change To Info Building when needed
+        gameObject.tag = "Barracks";
+    }
 }

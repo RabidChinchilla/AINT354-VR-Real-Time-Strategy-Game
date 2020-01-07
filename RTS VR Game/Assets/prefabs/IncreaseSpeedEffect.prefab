@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1672221996785179566}
   - component: {fileID: 412958706454316919}
   - component: {fileID: 7127795901150971097}
+  - component: {fileID: 2960084382650883732}
   m_Layer: 0
   m_Name: IncreaseSpeedEffect
   m_TagString: Untagged
@@ -106,3 +107,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9fd2669c1f8c0348abd963e3349347e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2960084382650883732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5156308521229587705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 10
+  edgeSharpness: 0

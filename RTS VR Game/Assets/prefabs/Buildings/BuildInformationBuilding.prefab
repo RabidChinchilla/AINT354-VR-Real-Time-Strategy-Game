@@ -64,7 +64,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   buySound: {fileID: 0}
-  unitToBuild: {fileID: 6703928717801337156, guid: 98a308405afafbc4eb5c8e183e4847d4,
+  unitToBuild: {fileID: 7106200563550833855, guid: 5ff46d0e401ac4d42b2075886bc5dcf1,
     type: 3}
 --- !u!1001 &959264512028799128
 PrefabInstance:
@@ -77,6 +77,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Info Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703928717801337156, guid: 98a308405afafbc4eb5c8e183e4847d4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7733378194140578647, guid: 98a308405afafbc4eb5c8e183e4847d4,
         type: 3}

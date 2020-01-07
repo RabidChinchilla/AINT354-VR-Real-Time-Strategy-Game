@@ -3053,6 +3053,7 @@ GameObject:
   - component: {fileID: 9129503131963302536}
   - component: {fileID: 271740685396167155}
   - component: {fileID: 8146452454373682378}
+  - component: {fileID: 3408118077131015957}
   m_Layer: 0
   m_Name: Barracks
   m_TagString: Untagged
@@ -3167,6 +3168,20 @@ MonoBehaviour:
   UnitProperties: {fileID: 11400000, guid: 7970eaad0323d1441812d259a631aa50, type: 2}
   turret: {fileID: 0}
   projectileInstantiationOffset: 0
+--- !u!114 &3408118077131015957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253971656873595035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d44ad68ff60bfcd4dbf700b6db9c9f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitCost: 0
+  unitBuildTime: 0
 --- !u!1 &5398496066718402186
 GameObject:
   m_ObjectHideFlags: 0

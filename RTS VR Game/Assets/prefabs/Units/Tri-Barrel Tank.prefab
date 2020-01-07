@@ -2274,6 +2274,9 @@ GameObject:
   - component: {fileID: 884226404732889984}
   - component: {fileID: 8687424508804398161}
   - component: {fileID: 3716935709871475532}
+  - component: {fileID: 4707149570445952164}
+  - component: {fileID: 1915790014417858111}
+  - component: {fileID: 3506039529340302420}
   m_Layer: 0
   m_Name: Tri-Barrel Tank
   m_TagString: Untagged
@@ -2467,6 +2470,57 @@ MonoBehaviour:
   hurt3: {fileID: 0}
   hurt4: {fileID: 0}
   player: {fileID: 0}
+--- !u!195 &4707149570445952164
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8159970020106813670}
+  m_Enabled: 1
+  m_AgentTypeID: 1479372276
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1915790014417858111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8159970020106813670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 10
+  edgeSharpness: 0
+--- !u!114 &3506039529340302420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8159970020106813670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293b0680d7524f84ca64fe2f7303f430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  availableActions: 
+  UnitProperties: {fileID: 0}
 --- !u!1 &8487101698666162754
 GameObject:
   m_ObjectHideFlags: 0

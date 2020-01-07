@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 6709957949352973366}
   - component: {fileID: 3627061911097581211}
   - component: {fileID: 8348799565393959661}
+  - component: {fileID: 6201910527016030236}
   m_Layer: 0
   m_Name: Single Bomb
   m_TagString: Untagged
@@ -153,3 +154,17 @@ MonoBehaviour:
   carpetBombSet: {fileID: 3456235760775478800, guid: 17db9d932245644448e76bc595c1ee4a,
     type: 3}
   spawnPoint: {fileID: 6709957948594705073}
+--- !u!114 &6201910527016030236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6709957949352973365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 10
+  edgeSharpness: 0
