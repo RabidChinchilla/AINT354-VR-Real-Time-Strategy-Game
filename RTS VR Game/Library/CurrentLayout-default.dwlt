@@ -15,15 +15,21 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 634
     y: 51
     width: 1278
     height: 1021
 =======
+=======
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
     x: 1281
     y: 51
     width: 1278
     height: 1348
+<<<<<<< HEAD
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
+=======
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
   m_ShowMode: 4
   m_Title: 
@@ -52,7 +58,11 @@ MonoBehaviour:
     y: 0
     width: 1278
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 1021
+=======
+    height: 1348
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
 =======
     height: 1348
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
@@ -97,7 +107,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 1001
+=======
+    y: 1328
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
 =======
     y: 1328
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
@@ -126,17 +140,23 @@ MonoBehaviour:
     y: 30
     width: 1278
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 971
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
   controlID: 63
 =======
+=======
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
     height: 1298
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
   controlID: 109
+<<<<<<< HEAD
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
+=======
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
 --- !u!114 &6
 MonoBehaviour:
@@ -159,17 +179,23 @@ MonoBehaviour:
     y: 0
     width: 910
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 971
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
   controlID: 64
 =======
+=======
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
     height: 1298
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
   controlID: 13
+<<<<<<< HEAD
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
+=======
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
 --- !u!114 &7
 MonoBehaviour:
@@ -192,11 +218,19 @@ MonoBehaviour:
     y: 0
     width: 910
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 687
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
   controlID: 65
+=======
+    height: 919
+  m_MinSize: {x: 406, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
+  vertical: 0
+  controlID: 14
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
 =======
     height: 919
   m_MinSize: {x: 406, y: 222}
@@ -223,7 +257,11 @@ MonoBehaviour:
     y: 0
     width: 202
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 687
+=======
+    height: 919
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
 =======
     height: 919
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
@@ -253,9 +291,15 @@ MonoBehaviour:
     y: 0
     width: 708
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 687
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
+=======
+    height: 919
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
 =======
     height: 919
   m_MinSize: {x: 200, y: 200}
@@ -285,9 +329,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 687
     width: 910
     height: 284
+=======
+    y: 919
+    width: 910
+    height: 379
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
 =======
     y: 919
     width: 910
@@ -320,7 +370,11 @@ MonoBehaviour:
     y: 0
     width: 368
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 971
+=======
+    height: 1298
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
 =======
     height: 1298
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
@@ -435,24 +489,36 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 634
     y: 81
     width: 202
     height: 668
 =======
+=======
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
     x: 1281
     y: 81
     width: 202
     height: 900
+<<<<<<< HEAD
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
+=======
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 7274feff
+=======
+      m_SelectedIDs: 42220100
+      m_LastClickedID: 0
+      m_ExpandedIDs: f05bfdff6c6dfdff98d7fdffe201feff90e5feff3829ffff3c29ffff5229ffff5629ffff7a29ffff8429ffff8c29ffff9029ffffa238ffffb638ffffbe38ffff463affff6a3affff1e48fffffce7ffff38fbffff
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
 =======
       m_SelectedIDs: 42220100
       m_LastClickedID: 0
@@ -503,15 +569,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 836
     y: 81
     width: 706
     height: 668
 =======
+=======
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
     x: 1483
     y: 81
     width: 706
     height: 900
+<<<<<<< HEAD
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
+=======
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -558,7 +630,11 @@ MonoBehaviour:
     m_Target: {x: -0.17522645, y: 0.580442, z: -0.1290004, w: -0.7849206}
     speed: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Value: {x: -0.17522645, y: 0.580442, z: -0.1290004, w: -0.7849206}
+=======
+    m_Value: {x: -0.17519504, y: 0.58033794, z: -0.12897727, w: -0.78477985}
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
 =======
     m_Value: {x: -0.17519504, y: 0.58033794, z: -0.12897727, w: -0.78477985}
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
@@ -639,15 +715,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 634
     y: 768
     width: 910
     height: 265
 =======
+=======
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
     x: 1281
     y: 1000
     width: 910
     height: 360
+<<<<<<< HEAD
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
+=======
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -675,15 +757,21 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 95}
     m_SelectedIDs: 5e9e0000
     m_LastClickedID: 40542
     m_ExpandedIDs: 000000005e9e0000a49e0000f29e00009a9f000020a1000010a30000b2a50000d0a500005ca6000000ca9a3b
 =======
+=======
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
     scrollPos: {x: 0, y: 440}
     m_SelectedIDs: 4a3a0000
     m_LastClickedID: 14922
     m_ExpandedIDs: 00000000863400000a350000e2350000c23b00007a4000003a4a0000485500007a5500004457000000ca9a3b
+<<<<<<< HEAD
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
+=======
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -713,7 +801,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000005e9e0000a49e0000f29e00009a9f000020a1000010a30000b2a50000d0a500005ca60000
+=======
+    m_ExpandedIDs: 00000000863400000a350000e2350000c23b0000485500007a55000044570000
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
 =======
     m_ExpandedIDs: 00000000863400000a350000e2350000c23b0000485500007a55000044570000
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
@@ -747,6 +839,9 @@ MonoBehaviour:
     m_HadKeyboardFocusLastEvent: 0
 =======
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
+=======
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
     m_ExpandedInstanceIDs: c623000000000000f4370000
     m_RenameOverlay:
@@ -824,15 +919,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1544
     y: 81
     width: 366
     height: 952
 =======
+=======
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
     x: 2191
     y: 81
     width: 366
     height: 1279
+<<<<<<< HEAD
+>>>>>>> parent of 4e182b7... Rebuild of UI complete
+=======
 >>>>>>> parent of 4e182b7... Rebuild of UI complete
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
