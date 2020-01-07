@@ -25,14 +25,18 @@ public class unitAttributes : MonoBehaviour
     private int nHP;
 
     //Unit Targetting
-    GameObject[] targets = GameObject.FindGameObjectsWithTag("Red");
+    GameObject[] targets;
     GameObject mainTarget = null;
     float maxDistance = 500.0f;
     Vector3 position;
 
+    int number; //Used for generating voice lines
+    unitVoiceLines voice;
+
     // Start is called before the first frame update
     void Start()
     {
+        GameObject[] targets = GameObject.FindGameObjectsWithTag("NonplayerUnit");
         state = "Normal";
         hp = 0;
         damage = 0;
@@ -43,6 +47,7 @@ public class unitAttributes : MonoBehaviour
         unitBuildTime = 0;
         //Move to update script as well
         Vector3 position = gameObject.transform.position;
+        voice = gameObject.GetComponent<unitVoiceLines>();
     }
 
    void SetStats(int unitHealth, int unitDamage, float move, float attack)
@@ -81,6 +86,11 @@ public class unitAttributes : MonoBehaviour
     {
         // When the unit takes damage its hp is altered here
         hp -= damageTaken;
+
+        number = Random.Range(1, 10);
+
+        voice.PlayAttackAudio(number);
+
 
         if(hp<=0)
         {
@@ -132,6 +142,9 @@ public class unitAttributes : MonoBehaviour
     {
         //gameObject is a place holder, it will be replaced by the nearest enemy object
         gameObject.SendMessage("TakeDamage",damage);
+
+        number = Random.Range(1, 10);
+        voice.PlayInjuredAudio(number);
     }
 
     void Die ()
