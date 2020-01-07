@@ -529,6 +529,7 @@ MonoBehaviour:
   health: 2000
   resources: 200
   resourceCounter: {fileID: 0}
+  healthCounter: {fileID: 0}
 --- !u!1 &266157073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,7 +2516,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 63b095f12f48df64d8bd365674e85d1a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.13
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 63b095f12f48df64d8bd365674e85d1a,
         type: 3}
@@ -3219,7 +3220,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 15
-  m_BaseOffset: 13
+  m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1645874859
