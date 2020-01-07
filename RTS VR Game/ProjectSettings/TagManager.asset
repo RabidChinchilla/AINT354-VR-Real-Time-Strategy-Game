@@ -9,6 +9,7 @@ TagManager:
   - NonplayerUnit
   - Spawn
   - mine
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - UI
   - 
   - 
-  - GroundLayer
   - FOW
+  - GroundLayer
   - 
   - 
   - 

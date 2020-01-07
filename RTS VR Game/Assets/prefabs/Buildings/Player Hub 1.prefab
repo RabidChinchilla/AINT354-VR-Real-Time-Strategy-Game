@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7653454523132242486}
+  - component: {fileID: 3133698466508905407}
+  - component: {fileID: 700822778017004594}
   m_Layer: 0
   m_Name: Player Hub 1
   m_TagString: Untagged
@@ -24,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417719060208709523}
   m_LocalRotation: {x: -0, y: 0.3446721, z: -0, w: 0.9387232}
-  m_LocalPosition: {x: 190.8, y: -25.771862, z: 864.8}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3784833585450181152}
@@ -33,6 +35,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 40.324, z: 0}
+--- !u!65 &3133698466508905407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417719060208709523}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.314113, y: 26.34659, z: 36.139576}
+  m_Center: {x: -0.33936968, y: 12.673295, z: 4.0692863}
+--- !u!114 &700822778017004594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417719060208709523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a9010f6128d8c4bb671127eb18b9d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2000
+  resources: 200
+  resourceCounter: {fileID: 0}
+  healthCounter: {fileID: 0}
 --- !u!1001 &6292538200139561206
 PrefabInstance:
   m_ObjectHideFlags: 0

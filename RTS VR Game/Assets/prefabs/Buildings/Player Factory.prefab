@@ -5157,11 +5157,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 216025432938027325}
-  - component: {fileID: 5153750965224169913}
   - component: {fileID: 7138248377575872021}
   - component: {fileID: 7363124248346736678}
+  - component: {fileID: 7718343545308620494}
   m_Layer: 0
-  m_Name: Factory 2 1
+  m_Name: Player Factory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5175,7 +5175,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3793192127143242542}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 208.20558, y: 0.08, z: 792.6269}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.46375, y: 0.46375, z: 0.46375}
   m_Children:
   - {fileID: 5231324896347625388}
@@ -5337,37 +5337,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5153750965224169913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3793192127143242542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b130f358dcb26548b2ff0923d496dc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  team: 0
-  brightness: 1
-  shapeType: 0
-  absoluteOffset: 0
-  offset: {x: 0, y: 0}
-  boxSize: {x: 5, y: 5}
-  circleRadius: 50
-  innerRadius: 1
-  angle: 180
-  texture: {fileID: 2800000, guid: aedb60bb6d3f6d14982de16ca694873e, type: 3}
-  rotateToForward: 1
-  lineOfSightMask:
-    serializedVersion: 2
-    m_Bits: 1
-  lineOfSightRaycastCount: 100
-  lineOfSightPenetration: 1
-  multithreading: 0
-  cellBased: 0
-  snapToPixelCenter: 0
 --- !u!65 &7138248377575872021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5398,6 +5367,19 @@ MonoBehaviour:
   UnitProperties: {fileID: 11400000, guid: 7970eaad0323d1441812d259a631aa50, type: 2}
   turret: {fileID: 0}
   projectileInstantiationOffset: 0
+--- !u!114 &7718343545308620494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3793192127143242542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6324f9cabee153e4cb74f2ec4e3fa070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandHub: {fileID: 0}
 --- !u!1 &3793599613834467823
 GameObject:
   m_ObjectHideFlags: 0

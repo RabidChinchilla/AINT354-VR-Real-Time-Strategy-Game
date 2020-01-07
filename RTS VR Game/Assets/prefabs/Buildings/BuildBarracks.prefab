@@ -13,23 +13,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2142529927333480683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5025218894657671812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91eec0c2d439dff46a562951cff5b953, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSelected: 0
-  availableActions: 
-  UnitProperties: {fileID: 11400000, guid: 7970eaad0323d1441812d259a631aa50, type: 2}
-  turret: {fileID: 0}
-  projectileInstantiationOffset: 0
 --- !u!1 &7295109636005153316
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +39,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7295109636005153316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 899.202, y: 83.83656, z: 108.902}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8351485898943111319}
@@ -92,7 +75,7 @@ MonoBehaviour:
   invalidMaterial: {fileID: 2100000, guid: 184108624ce86f14f80993db3ae08cc4, type: 2}
   buildingCollisionLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512
   buySound: {fileID: 0}
   unitToBuild: {fileID: 5253971656873595035, guid: ce9149b6016f2e74db2a4ce2493e6cca,
     type: 3}
@@ -163,7 +146,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8146452454373682378, guid: ce9149b6016f2e74db2a4ce2493e6cca, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ce9149b6016f2e74db2a4ce2493e6cca, type: 3}
 --- !u!1 &5025218894657671812 stripped
 GameObject:

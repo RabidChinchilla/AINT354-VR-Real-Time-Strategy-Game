@@ -3051,7 +3051,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9129503131963302536}
-  - component: {fileID: 4307752918598681653}
   - component: {fileID: 271740685396167155}
   - component: {fileID: 8146452454373682378}
   m_Layer: 0
@@ -3069,7 +3068,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5253971656873595035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 911.4687, y: 0.000008574101, z: 131.36806}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3806840209093471257}
@@ -3138,37 +3137,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4307752918598681653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5253971656873595035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b130f358dcb26548b2ff0923d496dc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  team: 0
-  brightness: 1
-  shapeType: 0
-  absoluteOffset: 0
-  offset: {x: 0, y: 0}
-  boxSize: {x: 5, y: 5}
-  circleRadius: 50
-  innerRadius: 1
-  angle: 180
-  texture: {fileID: 2800000, guid: aedb60bb6d3f6d14982de16ca694873e, type: 3}
-  rotateToForward: 1
-  lineOfSightMask:
-    serializedVersion: 2
-    m_Bits: 1
-  lineOfSightRaycastCount: 100
-  lineOfSightPenetration: 1
-  multithreading: 0
-  cellBased: 0
-  snapToPixelCenter: 0
 --- !u!65 &271740685396167155
 BoxCollider:
   m_ObjectHideFlags: 0

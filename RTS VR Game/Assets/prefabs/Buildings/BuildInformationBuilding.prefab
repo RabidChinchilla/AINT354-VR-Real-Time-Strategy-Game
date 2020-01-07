@@ -62,7 +62,7 @@ MonoBehaviour:
   invalidMaterial: {fileID: 2100000, guid: 184108624ce86f14f80993db3ae08cc4, type: 2}
   buildingCollisionLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512
   buySound: {fileID: 0}
   unitToBuild: {fileID: 6703928717801337156, guid: 98a308405afafbc4eb5c8e183e4847d4,
     type: 3}
@@ -133,7 +133,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3326135581265626364, guid: 98a308405afafbc4eb5c8e183e4847d4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 98a308405afafbc4eb5c8e183e4847d4, type: 3}
 --- !u!4 &7358186364155540431 stripped
 Transform:
