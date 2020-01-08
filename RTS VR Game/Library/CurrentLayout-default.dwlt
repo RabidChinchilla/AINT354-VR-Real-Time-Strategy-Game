@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 494}
-  m_MaxSize: {x: 14002, y: 14044}
+  m_MinSize: {x: 683, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 19259
+  controlID: 111
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1368
     height: 947
-  m_MinSize: {x: 404, y: 494}
+  m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 19237
+  controlID: 112
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,10 +161,10 @@ MonoBehaviour:
     y: 0
     width: 1368
     height: 592
-  m_MinSize: {x: 404, y: 222}
-  m_MaxSize: {x: 8004, y: 4022}
+  m_MinSize: {x: 406, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 19238
+  controlID: 113
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,8 +184,8 @@ MonoBehaviour:
     y: 0
     width: 398
     height: 592
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -265,8 +265,8 @@ MonoBehaviour:
     y: 0
     width: 552
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 72}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -383,9 +383,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f0521f00
-      m_LastClickedID: 2052848
-      m_ExpandedIDs: 86bfe4ffbcbfe4ff20d6e4ff24d6e4ff7ce5e4ff5cfae5fff807e6ff0e16e6ff2c16e6ff4c16e6ff842be6ff3c42e6ff6042e6ff8242e6ff2058e6ff9e67e6ff7478e6ff6a8ee6ff4295e6ff8a35e7ffa49febff52d6ecffbc17edff2c7fedffac85edffce85edff563aeeff683aeeff34c0eeff685fefff7c5fefffae3bf0ffc23bf0ff4c64f0ff5e64f0ffd280f1ff7c89f1ff249bf1fff6c5f2ff10c6f2ff2ac6f2ff08c7f5ff28c7f5ffb437f6ffb837f6ffc237f6ff02d9f8ff0cd9f8ff16d9f8ff20d9f8ff2ad9f8ff34d9f8ff3ed9f8ff48d9f8ff52d9f8ff5cd9f8ff66d9f8ff70d9f8ff7ad9f8ff84d9f8ff8ed9f8ff98d9f8ffa2d9f8ffa8ddf8ffc2ddf8ffe4def8fffedef8ff08dff8ff12dff8ff1cdff8ff26dff8ff30dff8ff3adff8ff44dff8ff4edff8ff58dff8ff62dff8ff6cdff8ff76dff8ff80dff8ff8adff8ff94dff8ff9edff8ffa8dff8ffb2dff8ffbcdff8ffc6dff8ffd0dff8ffdadff8ffe4dff8ffeedff8fff8dff8ff02e0f8ff0ce0f8ff16e0f8ff20e0f8ff2ae0f8ff34e0f8ff4ee0f8ff52e0f8ff54e0f8ff58e0f8ff5ae0f8ff5ce0f8ff7ee0f8ff88e0f8ff92e0f8ff9ce0f8ffa6e0f8ffc0e0f8ffc4e0f8ffc6e0f8ffcae0f8ffcce0f8ffcee0f8fff0e0f8ff0ae1f8ff0ee1f8ff10e1f8ff14e1f8ff16e1f8ff18e1f8ff3ae1f8ff44e1f8ff4ee1f8ff58e1f8ff62e1f8ff6ce1f8ff76e1f8ff80e1f8ff8ae1f8ffa4e1f8ffa8e1f8ffaae1f8ffaee1f8ffb0e1f8ffb2e1f8ffd4e1f8ffdee1f8ffe8e1f8fff2e1f8fffce1f8ff06e2f8ff10e2f8ff1ae2f8ff24e2f8ff2ee2f8ff48e2f8ff4ce2f8ff4ee2f8ff52e2f8ff54e2f8ff56e2f8ff78e2f8ff82e2f8ff8ce2f8ff96e2f8ffa0e2f8ffaae2f8ffc4e2f8ffc8e2f8ffcae2f8ffcee2f8ffd0e2f8ffd2e2f8fff4e2f8fffee2f8ff08e3f8ff22e3f8ff26e3f8ff28e3f8ff2ce3f8ff2ee3f8ff30e3f8ff52e3f8ff5ce3f8ff66e3f8ff80e3f8ff84e3f8ff86e3f8ff8ae3f8ff8ce3f8ff8ee3f8ffb0e3f8ffcae3f8ffcee3f8ffd0e3f8ffd4e3f8ffd6e3f8ffd8e3f8fffae3f8ff04e4f8ff0ee4f8ff18e4f8ff22e4f8ff2ce4f8ff36e4f8ff40e4f8ff4ae4f8ff54e4f8ff5ee4f8ff68e4f8ff72e4f8ff7ce4f8ff86e4f8ff90e4f8ff9ae4f8ffa4e4f8ffbee4f8ffc2e4f8ffc4e4f8ffc8e4f8ffcae4f8ffcce4f8ffeee4f8fff8e4f8ff12e5f8ff16e5f8ff18e5f8ff1ce5f8ff1ee5f8ff20e5f8ff42e5f8ff4ce5f8ff66e5f8ff6ae5f8ff6ce5f8ff70e5f8ff72e5f8ff74e5f8ff96e5f8ffa0e5f8ffaae5f8ffb4e5f8ffc4e5f8ffcee5f8ffd8e5f8ffe2e5f8ffece5f8fff6e5f8ff00e6f8ff02e6f8ff54f1f8ff6425faff2049faff82d5fcff88d5fcffaee2fdff68fbffff4a4f0000d04f000072500000d2510000505200007a520000a852000006530000166408006e640800ce7b0800f67b08007c7c08001e7d0800f87e0800227f0800507f0800e67f0800ea7f0800f87f0800fa7f080028800800346f1c0060741c0084d91c00c4d91c00b6261d00f0261d0064271d000a281d0086281d000c291d0072291d00
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 3690ffff6890ffffaea6ffff1abcffff1ebcffff80cbffff14e5ffff1efbffff929c0000a09c0000ca9c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -573,21 +573,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/RTS Framework/Prefabs/Vehicles
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/RTS Framework/Prefabs/Vehicles
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Gearing\Documents\GitHub\AINT354-VR-Real-Time-Strategy-Game\RTS
     VR Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 784}
-    m_SelectedIDs: a4430000
-    m_LastClickedID: 17316
-    m_ExpandedIDs: 00000000ac340000223500007e35000062360000a83700000a390000ea3900003a3b0000623d0000d43d0000b83e0000a8410000244a0000524a0000b84a0000404b0000f070000000ca9a3b
+    scrollPos: {x: 0, y: 768}
+    m_SelectedIDs: 9a350000
+    m_LastClickedID: 13722
+    m_ExpandedIDs: 000000001c35000094350000f4350000de3600002638000092390000743a0000c43b0000fa3d00006e3e0000563f000048420000e24a0000124b00007a4b0000024c00006c9c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -615,7 +615,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ac340000223500000c3600000a3900003a3b0000623d0000a8410000244a0000524a0000404b0000f070000000ca9a3b
+    m_ExpandedIDs: 000000001c35000094350000f4350000de3600002638000092390000743a0000c43b0000fa3d00006e3e0000563f000048420000e24a0000124b00007a4b0000024c00006c9c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
