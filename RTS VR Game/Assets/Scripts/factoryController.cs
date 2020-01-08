@@ -9,20 +9,17 @@ public class factoryController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        commandHub = GameObject.Find("CommandBuilding");
+        commandHub = GameObject.Find("Player Hub");
+        StartCoroutine(Wait());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        commandPost player = commandHub.GetComponent<commandPost>();
-        Wait();
-        player.resources += 10;
-    }
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(5);
+        commandPost player = commandHub.GetComponent<commandPost>();
+        yield return new WaitForSecondsRealtime(3);
+        StartCoroutine(Wait());
         Debug.Log("Wait is OVer");
+        player.resources += 20;
     }
 }

@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class unitAttributes : MonoBehaviour
 {//Editable Units
-    protected string type {get;set;} 
-    protected int hp { get; set; }
-    protected int damage { get; set; }
-    protected string state { get; set; }
-    protected float mvmntSpd { get; set; }
-    protected float atkSpd { get; set; }
+    protected string type;
+    public int hp;
+    public int damage;
+    public string state;
+    public float mvmntSpd;
+    public float atkSpd;
 
     //Build Variables
     [HideInInspector]
     public int unitCost;
+    [HideInInspector]
     public int unitBuildTime;
 
     protected float calmDown = 20.0f;
@@ -25,48 +26,53 @@ public class unitAttributes : MonoBehaviour
     private int nHP;
 
     //Unit Targetting
+    //List<GameObject> targets;
     GameObject[] targets;
     GameObject mainTarget = null;
-    float maxDistance = 500.0f;
+    float maxDistance = 1000000.0f;
     Vector3 position;
 
     int number; //Used for generating voice lines
     unitVoiceLines voice;
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-        GameObject[] targets = GameObject.FindGameObjectsWithTag("NonplayerUnit");
-        state = "Normal";
-        hp = 0;
-        damage = 0;
-        mvmntSpd = 0.0f;
-        atkSpd = 0.0f;
+    public string tag;
 
-        unitCost = 0;
-        unitBuildTime = 0;
+    // Start is called before the first frame update
+    void Start()
+    {
+        //List<GameObject> targets = new List<GameObject>();
+        //targets = GameObject.FindGameObjectsWithTag("CommandBuilding");
+        targets = GameObject.FindGameObjectsWithTag("NonplayerUnits");
+        state = "Normal";
+
+        FindAll();
         //Move to update script as well
         Vector3 position = gameObject.transform.position;
         voice = gameObject.GetComponent<unitVoiceLines>();
         //gameObject.tag = "Barracks";
         StartCoroutine(Tagging());
+        StartCoroutine(PlayThrough());
+        Debug.Log(targets[0]);
+    }
+    void Update()
+    {
+        Debug.Log(targets[0]);
     }
 
-   void SetStats(int unitHealth, int unitDamage, float move, float attack)
+    IEnumerator PlayThrough()
     {
-        //When the unit is created its Stats get placed into here
-        hp = unitHealth;
-        nHP = unitHealth;
+        FindNearestEnemy();
+        if (mainTarget != null)
+        {
+            DealDamage();
+        }
+        yield return new WaitForSecondsRealtime(atkSpd);
+        Vector3 position = gameObject.transform.position;
+        targets = GameObject.FindGameObjectsWithTag("NonplayerUnits");
+        //FindAll();
+        Debug.Log(targets);
 
-        damage = unitDamage;
-        nDmg = unitDamage;
-
-        mvmntSpd = move;
-        nMv = move;
-
-        atkSpd = attack;
-        nAtk = attack;
-
+        StartCoroutine(PlayThrough());
     }
 
     void FindNearestEnemy()
@@ -84,16 +90,14 @@ public class unitAttributes : MonoBehaviour
 
     }
 
-    void TakeDamage(int damageTaken)
+    public void TakeDamage(int damageTaken)
     {
         // When the unit takes damage its hp is altered here
+        Debug.Log("Damage is: " + damageTaken);
         hp -= damageTaken;
+        Debug.Log(hp);
 
-        number = Random.Range(1, 10);
-
-        voice.PlayAttackAudio(number);
-
-
+        Debug.Log("Humvee Taken Damage");
         if(hp<=0)
         {
             Die();
@@ -102,6 +106,10 @@ public class unitAttributes : MonoBehaviour
             //This give the unit a boost, like their morale was increased due to a victory
             //gameObject.SendMessage("Hyped");
         }
+    }
+    void FindAll()
+    {
+        targets = GameObject.FindGameObjectsWithTag("NonplayerUnits");
     }
     void ResetTargetting()
     {
@@ -143,10 +151,9 @@ public class unitAttributes : MonoBehaviour
     void DealDamage()
     {
         //gameObject is a place holder, it will be replaced by the nearest enemy object
-        gameObject.SendMessage("TakeDamage",damage);
+        mainTarget.SendMessage("TakeDamage",damage);
+        ResetTargetting();
 
-        number = Random.Range(1, 10);
-        voice.PlayInjuredAudio(number);
     }
 
     void Die ()
@@ -170,6 +177,6 @@ public class unitAttributes : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(2);
         //Change To Info Building when needed
-        gameObject.tag = "Barracks";
+        gameObject.tag = tag;
     }
 }

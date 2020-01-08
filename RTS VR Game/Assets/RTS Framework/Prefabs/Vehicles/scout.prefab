@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 195029037472522238}
   - component: {fileID: 114040727779738894}
   - component: {fileID: 114249714640052842}
+  - component: {fileID: 448580167663422909}
   m_Layer: 10
   m_Name: scout
   m_TagString: SelectableUnit
@@ -100,6 +101,20 @@ MonoBehaviour:
   isSelected: 0
   availableActions: 
   UnitProperties: {fileID: 11400000, guid: dad6718e6ca2e2e429c32281379e7647, type: 2}
+--- !u!114 &448580167663422909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506370181725868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 30
+  edgeSharpness: 0
 --- !u!1 &1982422611920390
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,28 +4,42 @@ using UnityEngine;
 
 public class buildOrder : MonoBehaviour
 {
-    List<GameObject> buildList;
-    bool buildFree;
-    GameObject spawnPoint;
+    
+    int buildNum;
+    public GameObject spawnPoint;
+    public GameObject humvee;
+    public GameObject tank;
+    public GameObject vulcan;
 
     // Start is called before the first frame update
     void Start()
     {
-
-        GameObject newUnit = buildList[1];
-        unitAttributes buildInfo = newUnit.GetComponent<unitAttributes>();
-        float buildTime = buildInfo.unitBuildTime;
+        StartCoroutine(BuildOrder());
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    void Build()
+    IEnumerator BuildOrder()
     {
-        Instantiate(buildList[1], spawnPoint.transform.position,spawnPoint.transform.rotation);
+        buildNum = Random.Range(1, 2);
+        if(buildNum == 1)
+        {
+            Build(humvee);
+        }
+        //if (buildNum == 2)
+        //{
+        //    Build(tank);
+        //}
+        //if (buildNum == 3)
+        //{
+        //    Build(vulcan);
+        //}
+        yield return new WaitForSecondsRealtime(15);
+        StartCoroutine(BuildOrder());
+    }
+    void Build(GameObject unit)
+    {
+        Instantiate(unit, spawnPoint.transform.position,spawnPoint.transform.rotation);
     }
     //void Completed()
     //{

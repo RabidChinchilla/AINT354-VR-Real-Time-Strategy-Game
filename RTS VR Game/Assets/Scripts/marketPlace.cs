@@ -26,105 +26,49 @@ public class marketPlace : MonoBehaviour
     {
         if (unit == "Humvee")
         {
-            cost = 200;
+            cost = 100;
         }
         if (unit == "Tank")
         {
-            cost = 200;
+            cost = 250;
         }
         if (unit == "Vulcan")
         {
-            cost = 200;
+            cost = 300;
         }
         if (unit == "Barracks")
         {
-            cost = 200;
+            cost = 400;
         }
         if (unit == "Info")
         {
-            cost = 200;
+            cost = 300;
         }
         if (unit == "Factory")
         {
-            cost = 200;
+            cost = 600;
         }
         if (unit == "Ability1")
         {
-            cost = 200;
+            cost = 250;
         }
         if (unit == "Ability2")
         {
-            cost = 200;
+            cost = 300;
         }
         if (unit == "Ability3")
         {
-            cost = 200;
+            cost = 600;
         }
-        if (unit == "Upgrade")
+        if (unit == "UpgradeHealth")
         {
             cost = 200;
         }
-        if (unit == "Upgrade")
-        {
-            cost = 200;
-        }
-        if (unit == "Upgrade")
+        if (unit == "UpgradeDamage")
         {
             cost = 200;
         }
         return cost;
     }
 
-    float GetTime(string unit)
-    {
-        if (unit == "Humvee")
-        {
-            time = 10f;
-        }
-        if (unit == "Tank")
-        {
-            time = 10f;
-        }
-        if (unit == "Vulcan")
-        {
-            time = 10f;
-        }
-        if (unit == "Barracks")
-        {
-            time = 10f;
-        }
-        if (unit == "Info")
-        {
-            time = 10f;
-        }
-        if (unit == "Factory")
-        {
-            time = 10f;
-        }
-        if (unit == "Ability1")
-        {
-            time = 10f;
-        }
-        if (unit == "Ability2")
-        {
-            time = 10f;
-        }
-        if (unit == "Ability3")
-        {
-            time = 10f;
-        }
-        if (unit == "Upgrade")
-        {
-            time = 10f;
-        }
-        if (unit == "Upgrade")
-        {
-            time = 10f;
-        }
-        if (unit == "Upgrade")
-        {
-            time = 10f;
-        }
-        return time;
-    }
 }

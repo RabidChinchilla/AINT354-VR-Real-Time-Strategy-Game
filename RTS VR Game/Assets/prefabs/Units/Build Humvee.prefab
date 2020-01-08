@@ -64,7 +64,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   buySound: {fileID: 8300000, guid: 043a678318ff6f34baacaf3ead5de623, type: 3}
-  unitToBuild: {fileID: 1506370181725868, guid: a2bcd909f632204449bf5b66b13d2373,
+  unitToBuild: {fileID: 4012103484133662741, guid: f700e62481a84bc4fbe2d8a4b40be2e6,
     type: 3}
 --- !u!1001 &8089208570923161704
 PrefabInstance:

@@ -62,7 +62,7 @@ MonoBehaviour:
   invalidMaterial: {fileID: 2100000, guid: 184108624ce86f14f80993db3ae08cc4, type: 2}
   buildingCollisionLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512
   buySound: {fileID: 8300000, guid: 043a678318ff6f34baacaf3ead5de623, type: 3}
   unitToBuild: {fileID: 1506370181725868, guid: eee2d7c9d619b574eb02527e8eac23d5,
     type: 3}

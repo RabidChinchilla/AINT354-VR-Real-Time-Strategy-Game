@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1634124816852952506}
   - component: {fileID: 2924217236573207315}
   - component: {fileID: 2159897550971986444}
+  - component: {fileID: 2096473710411817795}
+  - component: {fileID: -7811905310164523152}
   m_Layer: 0
   m_Name: UAV
   m_TagString: Untagged
@@ -58,3 +60,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 20
   edgeSharpness: 0
+--- !u!114 &2096473710411817795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634124816852952507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504233659fa06374f8f582867e1e3dea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7811905310164523152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634124816852952507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a516b4a2bea33546aa28d6cc6e839e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

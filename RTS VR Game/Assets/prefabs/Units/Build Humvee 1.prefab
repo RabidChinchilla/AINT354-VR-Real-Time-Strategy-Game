@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 65693021265644464}
   - component: {fileID: 114121125166905092}
   m_Layer: 0
-  m_Name: Build Humvee
+  m_Name: Build Humvee 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

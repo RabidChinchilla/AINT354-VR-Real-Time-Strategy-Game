@@ -6,8 +6,10 @@ using UnityEngine.AI;
 public class MoveRandomly : MonoBehaviour
 {
     NavMeshAgent navMeshAgent;
+    public GameObject Model;
+    NavMeshAgent modelAgent;
     NavMeshPath path;
-    public float timerForNewPath;
+    public float timerForNewPath = 4;
     bool inCoRoutine = false;
     Vector3 target;
     bool validPath;
@@ -15,7 +17,10 @@ public class MoveRandomly : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        modelAgent = Model.GetComponent<NavMeshAgent>();
         navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent.speed = 100.0f;
+        modelAgent.speed = 100.0f;
         path = new NavMeshPath();
     }
 
@@ -30,8 +35,8 @@ public class MoveRandomly : MonoBehaviour
 
     Vector3 getNewRandomPosition()
     {
-        float x = Random.Range(-20, 20);
-        float z = Random.Range(-20, 20);
+        float x = Random.Range(-1000, 1000);
+        float z = Random.Range(-1000, 1000);
 
         Vector3 pos = new Vector3(x, 0, z);
 
@@ -42,6 +47,7 @@ public class MoveRandomly : MonoBehaviour
     {
         target = getNewRandomPosition();
         navMeshAgent.SetDestination(target);
+        modelAgent.SetDestination(target);
     }
 
     IEnumerator doSomething()

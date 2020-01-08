@@ -10,7 +10,8 @@ public class DestroyInTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("NonplayerUnit"))
         {
             Debug.Log("Hit Enemy");
-            //Destroy(other.gameObject);
+            other.gameObject.GetComponent<enemyHub>().Die();
+            Destroy(other.gameObject);
         }
     }
 
@@ -20,7 +21,8 @@ public class DestroyInTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("NonplayerUnit"))
         {
             Debug.Log("Hit Enemy");
-            //Destroy(other.gameObject);
+            other.gameObject.GetComponent<enemyHub>().Die();
+            Destroy(other.gameObject);
         }
     }
 
