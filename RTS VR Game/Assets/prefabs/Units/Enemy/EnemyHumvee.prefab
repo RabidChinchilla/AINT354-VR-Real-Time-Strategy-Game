@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6698147979078278456}
   - component: {fileID: 8409306065524884756}
   m_Layer: 0
-  m_Name: HumveeTextured
+  m_Name: EnemyHumvee
   m_TagString: NonplayerUnit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
