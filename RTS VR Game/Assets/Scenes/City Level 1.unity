@@ -1919,6 +1919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FinalHumvee
       objectReference: {fileID: 0}
+    - target: {fileID: 1506370181725868, guid: 0e3c1ef8b1536e8449a35eccc9a5745c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4172229278923122, guid: 0e3c1ef8b1536e8449a35eccc9a5745c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 824.6
@@ -1962,6 +1966,11 @@ PrefabInstance:
     - target: {fileID: 4172229278923122, guid: 0e3c1ef8b1536e8449a35eccc9a5745c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862873478326403139, guid: 0e3c1ef8b1536e8449a35eccc9a5745c,
+        type: 3}
+      propertyPath: maxDistance
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e3c1ef8b1536e8449a35eccc9a5745c, type: 3}
@@ -3694,9 +3703,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 618058a7c7d23a14a983af8947434908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tank: {fileID: 1506370181725868, guid: da5c12c27d2b52f45a5b552250f7100f, type: 3}
-  humvee: {fileID: 1506370181725868, guid: a2bcd909f632204449bf5b66b13d2373, type: 3}
-  vulcan: {fileID: 1506370181725868, guid: 2d0774b9d9d6e044e84958435d959bd2, type: 3}
+  tank: {fileID: 1506370181725868, guid: 7189a6bfb2d3f2b419b0ce2ae9ae1d2e, type: 3}
+  humvee: {fileID: 1506370181725868, guid: 0e3c1ef8b1536e8449a35eccc9a5745c, type: 3}
+  vulcan: {fileID: 1506370181725868, guid: 49f68156c80108447af0487f7e9b8dd8, type: 3}
   spawnPoint: {fileID: 0}
   resources: 0
   marketPlace: {fileID: 0}
@@ -8385,7 +8394,7 @@ MonoBehaviour:
   fowPlaneScale: {x: 800, y: 800, z: 1}
   planeOffset: {x: 0, y: 0, z: 9.1}
   planeRotation: 0
-  color_fog: {r: 0, g: 0, b: 0, a: 1}
+  color_fog: {r: 0, g: 0, b: 0, a: 0.59607846}
   prefab_fowPlane: {fileID: 1469756570474868, guid: 0ac9ba0bea193d046afea0819b889803,
     type: 3}
   updateFrequency: 0
@@ -9927,11 +9936,11 @@ GameObject:
   - component: {fileID: 1253631997}
   m_Layer: 10
   m_Name: testTarget
-  m_TagString: Untagged
+  m_TagString: NonplayerUnit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1253631997
 BoxCollider:
   m_ObjectHideFlags: 0

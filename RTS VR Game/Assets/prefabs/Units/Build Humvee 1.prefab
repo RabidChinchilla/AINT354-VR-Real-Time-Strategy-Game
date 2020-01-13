@@ -64,7 +64,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   buySound: {fileID: 8300000, guid: 043a678318ff6f34baacaf3ead5de623, type: 3}
-  unitToBuild: {fileID: 1506370181725868, guid: a2bcd909f632204449bf5b66b13d2373,
+  unitToBuild: {fileID: 1506370181725868, guid: 0e3c1ef8b1536e8449a35eccc9a5745c,
     type: 3}
 --- !u!1001 &8089208570923161704
 PrefabInstance:
@@ -73,11 +73,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4663195715633254}
     m_Modifications:
-    - target: {fileID: 4012103484133662741, guid: f700e62481a84bc4fbe2d8a4b40be2e6,
-        type: 3}
-      propertyPath: m_Name
-      value: HumveeTextured
-      objectReference: {fileID: 0}
     - target: {fileID: 4012103484133662742, guid: f700e62481a84bc4fbe2d8a4b40be2e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -132,6 +127,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012103484133662741, guid: f700e62481a84bc4fbe2d8a4b40be2e6,
+        type: 3}
+      propertyPath: m_Name
+      value: HumveeTextured
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4012103484318449217, guid: f700e62481a84bc4fbe2d8a4b40be2e6, type: 3}

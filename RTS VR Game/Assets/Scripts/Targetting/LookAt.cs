@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class LookAt : MonoBehaviour
 {
-
+    public float maxDistance = 20;
     private Transform target;
     private GameObject targetObject;
     private int damage;
     private float currentHitDistance;
+
+    private GameObject other;
 
 
     // Start is called before the first frame update
@@ -20,44 +22,27 @@ public class LookAt : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        // Does the ray intersect any objects excluding the player layer
-        if (Physics.SphereCast(transform.position, 5f, transform.forward, out hit, 20))
+
+        if (Physics.SphereCast(transform.position, 10f, transform.forward, out hit, maxDistance))
         {
             currentHitDistance = hit.distance;
+            other = hit.collider.gameObject;
             //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            if (other.tag == "NonplayerUnit")
+            {
+                Debug.Log("Hit " + other.name); 
+                target = other.transform;
+                targetObject = other.gameObject;
+            }
             Debug.Log("Look at Did Hit");
         }
         else
         {
-            currentHitDistance = hit.distance;
-            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 70, Color.white);
-            Debug.Log("Look at Did not Hit");
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "NonplayerUnit")
-        {
-            target = other.transform;
-            targetObject = other.gameObject;
-        }
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "NonplayerUnit")
-        {
-            target = other.transform;
-            targetObject = other.gameObject;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "NonplayerUnit")
-        {
+            currentHitDistance = 20;
             target = null;
             targetObject = null;
+            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 70, Color.white);
+            Debug.Log("Look at Did not Hit");
         }
     }
 
@@ -84,6 +69,6 @@ public class LookAt : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Debug.DrawLine(transform.position, transform.position + transform.forward * currentHitDistance);
-        Gizmos.DrawWireSphere(transform.position + transform.forward * currentHitDistance, 5f);
+        Gizmos.DrawWireSphere(transform.position + transform.forward * currentHitDistance, 10f);
     }
 }
