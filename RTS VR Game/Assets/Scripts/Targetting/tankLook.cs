@@ -64,4 +64,11 @@ public class tankLook : MonoBehaviour
         StartCoroutine(Attack());
         //Debug.Log("Damage is: "+damage);
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Debug.DrawLine(transform.position, transform.position + transform.forward * currentHitDistance);
+        Gizmos.DrawWireSphere(transform.position + transform.forward * currentHitDistance, 10f);
+    }
 }
