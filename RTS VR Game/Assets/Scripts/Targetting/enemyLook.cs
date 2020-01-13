@@ -4,97 +4,45 @@ using UnityEngine;
 
 public class enemyLook : MonoBehaviour
 {
+    public float maxDistance = 20;
     private Transform target;
     private GameObject targetObject;
     private int damage;
+    private float currentHitDistance;
+
+    private GameObject other;
 
 
     // Start is called before the first frame update
-
-    private void OnTriggerEnter(Collider other)
+    void Awake()
     {
-        if (other.tag == "SelectableUnit")
-        {
-            target = other.transform;
-            targetObject = other.gameObject;
-        }
-        if (other.tag == "CommanderBuilding")
-        {
-            target = other.transform;
-            targetObject = other.gameObject;
-        }
-        if (other.tag == "Barracks")
-        {
-            target = other.transform;
-            targetObject = other.gameObject;
-        }
-        if (other.tag == "Factory")
-        {
-            target = other.transform;
-            targetObject = other.gameObject;
-        }
-        if (other.tag == "InfoBuilding")
-        {
-            target = other.transform;
-            targetObject = other.gameObject;
-        }
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "SelectableUnit")
-        {
-            target = other.transform;
-            targetObject = other.gameObject;
-        }
-        if (other.tag == "CommanderBuilding")
-        {
-            target = other.transform;
-            targetObject = other.gameObject;
-        }
-        if (other.tag == "Barracks")
-        {
-            target = other.transform;
-            targetObject = other.gameObject;
-        }
-        if (other.tag == "Factory")
-        {
-            target = other.transform;
-            targetObject = other.gameObject;
-        }
-        if (other.tag == "InfoBuilding")
-        {
-            target = other.transform;
-            targetObject = other.gameObject;
-        }
+        damage = gameObject.GetComponent<unitAttributes>().damage;
     }
 
-    private void OnTriggerExit(Collider other)
+    void Update()
     {
+        RaycastHit hit;
 
-        if (other.tag == "SelectableUnit")
+        if (Physics.SphereCast(transform.position, 10f, transform.forward, out hit, maxDistance))
         {
-            target = null;
-            targetObject = null;
+            currentHitDistance = hit.distance;
+            other = hit.collider.gameObject;
+            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            if (other.tag == "SelectableUnit" || other.tag == "CommanderBuilding" || other.tag == "Barracks" || other.tag == "Factory" || other.tag == "InfoBuilding")
+            {
+                Debug.Log("Enemy Hit " + other.name);
+                target = other.transform;
+                targetObject = other.gameObject;
+            }
+            Debug.Log("Enemy Look at Did Hit");
         }
-        if (other.tag == "CommanderBuilding")
+        else
         {
+            currentHitDistance = 20;
             target = null;
             targetObject = null;
-        }
-        if (other.tag == "Barracks")
-        {
-            target = null;
-            targetObject = null;
-        }
-        if (other.tag == "Factory")
-        {
-            target = null;
-            targetObject = null;
-        }
-        if (other.tag == "InfoBuilding")
-        {
-            target = null;
-            targetObject = null;
+            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 70, Color.white);
+            Debug.Log("Enemy Look at Did not Hit");
         }
     }
 
