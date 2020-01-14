@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class DestroyInTrigger : MonoBehaviour
 {
+
+    public int damage = 5;  
+
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Something in trigger");
         if (other.gameObject.CompareTag("NonplayerUnit"))
         {
             Debug.Log("Hit Enemy");
-            other.gameObject.GetComponent<enemyHub>().Die();
+            //other.gameObject.GetComponent<enemyHub>().Die();
+            other.gameObject.GetComponent<enemyUnit>().TakeDamage(damage);
             Destroy(other.gameObject);
         }
     }
@@ -21,7 +25,8 @@ public class DestroyInTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("NonplayerUnit"))
         {
             Debug.Log("Hit Enemy");
-            other.gameObject.GetComponent<enemyHub>().Die();
+            //other.gameObject.GetComponent<enemyHub>().Die();
+            other.gameObject.GetComponent<enemyUnit>().TakeDamage(damage);
             Destroy(other.gameObject);
         }
     }

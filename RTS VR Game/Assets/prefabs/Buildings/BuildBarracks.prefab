@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7295109636005153339}
   - component: {fileID: 7295109636005153338}
   - component: {fileID: 7295109636005153317}
+  - component: {fileID: -3291359946348041315}
   m_Layer: 0
   m_Name: BuildBarracks
   m_TagString: Untagged
@@ -66,6 +67,20 @@ MonoBehaviour:
   buySound: {fileID: 0}
   unitToBuild: {fileID: 1788530220720020117, guid: 60cc1a90bbf1c484ea4525b14db10340,
     type: 3}
+--- !u!114 &-3291359946348041315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7295109636005153316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 50
+  edgeSharpness: 0
 --- !u!1001 &7944312501822904234
 PrefabInstance:
   m_ObjectHideFlags: 0

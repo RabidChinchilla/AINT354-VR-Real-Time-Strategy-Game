@@ -5394,7 +5394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 10
+  radius: 50
   edgeSharpness: 0
 --- !u!114 &3652955750335004178
 MonoBehaviour:
@@ -5415,6 +5415,7 @@ MonoBehaviour:
   atkSpd: 0
   unitCost: 0
   unitBuildTime: 0
+  tag: 
 --- !u!1 &3793599613834467823
 GameObject:
   m_ObjectHideFlags: 0

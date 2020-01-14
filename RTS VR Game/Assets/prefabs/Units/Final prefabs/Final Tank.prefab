@@ -87,7 +87,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506370181725868}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d98c290908ab3b44a6b87d08c6a89c2, type: 3}
   m_Name: 
@@ -155,8 +155,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 200
-  commandHub: {fileID: 0}
-  info: {fileID: 0}
 --- !u!114 &4465650373255139847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,11 +471,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4172229278923122}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: cc475f1b757105e449faec5d3dcd873a,
-        type: 3}
-      propertyPath: m_Name
-      value: Tri-Barrel Tank
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cc475f1b757105e449faec5d3dcd873a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -547,6 +540,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cc475f1b757105e449faec5d3dcd873a,
+        type: 3}
+      propertyPath: m_Name
+      value: Tri-Barrel Tank
       objectReference: {fileID: 0}
     - target: {fileID: -380615254873364339, guid: cc475f1b757105e449faec5d3dcd873a,
         type: 3}

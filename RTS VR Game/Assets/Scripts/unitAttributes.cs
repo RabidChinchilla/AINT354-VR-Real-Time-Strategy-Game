@@ -56,7 +56,7 @@ public class unitAttributes : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(targets[0]);
+        //Debug.Log(targets[0]);
     }
 
     IEnumerator PlayThrough()

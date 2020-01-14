@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 5594472197147531438}
   - component: {fileID: 2684390866038348948}
   - component: {fileID: 8755017777416923070}
+  - component: {fileID: 419350576315848960}
   m_Layer: 0
   m_Name: BuildCommandPost
   m_TagString: Untagged
@@ -79,6 +80,20 @@ MonoBehaviour:
   buySound: {fileID: 0}
   unitToBuild: {fileID: 417719060208709523, guid: 106ba08c546dff445816509a6b97f4c0,
     type: 3}
+--- !u!114 &419350576315848960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7424825090899736247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 50
+  edgeSharpness: 0
 --- !u!1001 &3454684995221341822
 PrefabInstance:
   m_ObjectHideFlags: 0

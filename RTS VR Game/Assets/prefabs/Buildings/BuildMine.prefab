@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6991074069718095407}
   - component: {fileID: 6991074069718095406}
   - component: {fileID: 6991074069718095405}
+  - component: {fileID: 7698568924810052224}
   m_Layer: 0
   m_Name: BuildMine
   m_TagString: Untagged
@@ -66,6 +67,20 @@ MonoBehaviour:
   buySound: {fileID: 0}
   unitToBuild: {fileID: 3793192127143242542, guid: c931bc2a99f3d3b45adab6f2e2f81b74,
     type: 3}
+--- !u!114 &7698568924810052224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991074069718095404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 50
+  edgeSharpness: 0
 --- !u!1001 &7226332050875088590
 PrefabInstance:
   m_ObjectHideFlags: 0

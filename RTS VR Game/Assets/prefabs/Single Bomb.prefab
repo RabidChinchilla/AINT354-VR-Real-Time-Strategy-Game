@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 3627061911097581211}
   - component: {fileID: 8348799565393959661}
   - component: {fileID: 6201910527016030236}
+  - component: {fileID: 8557876994446604663}
   m_Layer: 0
   m_Name: Single Bomb
   m_TagString: Untagged
@@ -168,3 +169,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 10
   edgeSharpness: 0
+--- !u!114 &8557876994446604663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6709957949352973365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768fe640b69fbb745a122d7c66ea2a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 50

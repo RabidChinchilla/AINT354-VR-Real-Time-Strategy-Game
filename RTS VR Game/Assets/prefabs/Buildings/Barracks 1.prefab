@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 20
+  radius: 50
   edgeSharpness: 0
 --- !u!114 &6846637436785696772
 MonoBehaviour:
@@ -132,16 +132,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1788530220720020106}
     m_Modifications:
-    - target: {fileID: 5253971656873595035, guid: ce9149b6016f2e74db2a4ce2493e6cca,
-        type: 3}
-      propertyPath: m_Name
-      value: Barracks
-      objectReference: {fileID: 0}
-    - target: {fileID: 5253971656873595035, guid: ce9149b6016f2e74db2a4ce2493e6cca,
-        type: 3}
-      propertyPath: m_TagString
-      value: Barracks
-      objectReference: {fileID: 0}
     - target: {fileID: 9129503131963302536, guid: ce9149b6016f2e74db2a4ce2493e6cca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -196,6 +186,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253971656873595035, guid: ce9149b6016f2e74db2a4ce2493e6cca,
+        type: 3}
+      propertyPath: m_Name
+      value: Barracks
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253971656873595035, guid: ce9149b6016f2e74db2a4ce2493e6cca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Barracks
       objectReference: {fileID: 0}
     - target: {fileID: 5504813805550768913, guid: ce9149b6016f2e74db2a4ce2493e6cca,
         type: 3}
