@@ -102,8 +102,8 @@ public class unitVoiceLines : MonoBehaviour
         }
         if (number > 8)
         {
-            StartCoroutine(PlayMoveAudio(number));
             yield return new WaitForSecondsRealtime(12.0f);
+            StartCoroutine(PlayMoveAudio(number));
         }
     }
 

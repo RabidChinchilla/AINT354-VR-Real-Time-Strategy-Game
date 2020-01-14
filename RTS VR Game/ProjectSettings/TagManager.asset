@@ -15,6 +15,7 @@ TagManager:
   - InfoBuilding
   - Factory
   - PlayerController
+  - Funds
   layers:
   - Default
   - TransparentFX
